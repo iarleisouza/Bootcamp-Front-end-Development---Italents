@@ -1,0 +1,25 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+  
+ }
+ p {
+     background: red;
+     margin: 0;
+ }
+
+ .tabela {
+     display: flex;
+    
+ }
+
+ .cliente, .numero {
+     width: 30%;
+     margin: auto;
+ }
+
+
+ form label, .button {
+     margin: 10px;
+ }

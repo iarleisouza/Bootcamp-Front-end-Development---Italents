@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rifa Online</title>
+  
+</head>
+<body onload="show()">
+
+    <!-- Inicio Container -->
+        <div class="container"> 
+     <h1>Rifa Online</h1>
+
+
+
+     <h4 class="valor"></h4>
+   
+      
+        
+        <label for="name">Nome: </label>
+        <input type="text" id="inputName" placeholder="Nome e Sobrenome..." autocomplete="off">
+        
+        <label for="number">Número (1-50): </label>
+        <input type="number" id="inputNumber" min="1" max="50"  autocomplete="off">
+
+         <div class="button">
+        <button type="submit" id="adicionaBilhete" onclick="adicionarBilhete()">Adicionar Bilhete</button>
+      
+   
+        </div>
+       
+        <h2>Nomes e Bilhetes Vendidos</h2>
+
+        <div class="tabela">
+     
+       <div class="cliente">
+          <label for="name">Nome</label>
+               <p id="infoName"></p>
+       </div>
+     
+       <div class="numero">
+         <label for="number">Número do Bilhete </label>
+              <p id="infoNumber"></p>
+         
+       </div>
+     
+      
+        </div> 
+     <!--     <p id="infoNumber"></p> -->
+        <!-- <div class="informacoes">
+            <p>Valor Fixo da Rifa</p>
+            <p>Valor Total das Rifas Vendidas</p>
+            <p>Número de Rifas Vendidas</p>
+            <p>Rifas que Faltam ser Vendidas</p>
+        </div> -->
+    </div>  
+    <!-- Fim do container -->
+  <script src="js/main.js"></script>
+  <script src="js/indexdb.js"></script>
+
+</body>
+</html>
