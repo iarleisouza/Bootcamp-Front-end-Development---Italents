@@ -1,0 +1,25 @@
+*{
+  width: 900px;
+  margin: 10px auto;
+  text-align: center;
+  
+  }
+
+  h1 {
+    color: cadetblue;
+  }
+p {
+  margin: 10px;
+}
+ul {
+  width: 300px;
+ 
+  margin: 40px auto;
+  list-style: none;
+  border: 1px solid black;
+  box-shadow: 1px 1px 1px ;
+}
+
+li {
+  text-align: left;
+}
