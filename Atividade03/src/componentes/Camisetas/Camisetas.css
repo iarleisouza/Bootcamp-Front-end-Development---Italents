@@ -1,11 +1,12 @@
-.filmes {
+.camisetas {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-top: 120px;
 }
 
-.filmes-lista {
+.camisetas-lista {
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -15,7 +16,7 @@
     flex-wrap: wrap;
 }
 
-.filmes-lista .filme-item {
+.camisetas-lista .camiseta-item {
    margin-top: 20px;
    width: 25%;
    display: flex;
@@ -24,7 +25,7 @@
    justify-content: center;
    
 }
-.filmes-lista .filme-item img{
+.camisetas-lista .camiseta-item img{
    width: 100%;
    height: 150px;
 

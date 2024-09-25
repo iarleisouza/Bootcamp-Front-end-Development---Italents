@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Mensagem from './componentes/Mensagem/Mensagem.js'
 import Header from './componentes/Header/Header.js'
 import Footer from './componentes/Footer/Footer.js'
-import Filmes from './componentes/Filmes/Filmes.js'
+import Camisetas from './componentes/Camisetas/Ca misetas.js'
 import Form from './componentes/Form/Form.js'
+
 
 
 
@@ -17,17 +17,15 @@ function App() {
 
     <div className='container'>
         <Header/>
-     
-     
-     <Mensagem cor = "red">
-    Boa sorte nos estudos!!!
-   </Mensagem>
-   
-  <Filmes/>
-  <section className='contato'>
-    <h2> Entre em contato!</h2>
-    <Form/>
-  </section>
+        <section className='pesquisa'>
+       <h2> Entre em contato!</h2>
+       
+         <Form/>   
+      
+  </section> 
+    
+  <Camisetas/>
+  
 
    </div>
    <Footer/>

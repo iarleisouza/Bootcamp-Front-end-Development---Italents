@@ -1,8 +1,10 @@
 .header {
-    position: fixed;
+    
+   position: fixed;
+   top: 0;
     left: 0;
     right: 0;
-    background: #3498db;
+    background: red;
     padding: 10px 50px;
     display: flex;
     justify-content: space-between;
@@ -13,5 +15,6 @@
 .header h1 {
     font-size: 1.2rem;
     color: #fff;
+    text-align: center;
    
 }
