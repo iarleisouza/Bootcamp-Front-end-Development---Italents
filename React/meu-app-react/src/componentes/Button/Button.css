@@ -1,0 +1,15 @@
+button {
+  
+    padding: 10px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+ 
+    background-color: blue;
+    transition: .4s all;
+    border-radius: 10px;
+}
+
+button:hover {
+   transform: scale(1.1);
+}
