@@ -1,0 +1,52 @@
+{
+  "movies": [
+    {
+      "id": "0",
+      "nome": "Marvels",
+      "poster": "https://shopee.co.id/inspirasi-shopee/wp-content/uploads/2022/01/10-Film-Marvel-Terbaik.webp",
+      "anoLancamento": "2020"
+    },
+    {
+      "id": "1",
+      "nome": "Vingadores",
+      "poster": "https://parade.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTk3MzM3ODU4NTU2NTY4Nzc1/marveldisney.webp",
+      "anoLancamento": "2018"
+    },
+    {
+      "id": "2",
+      "nome": "Homem de Ferro",
+      "poster": "https://de.web.img3.acsta.net/r_654_368/newsv7/19/12/19/16/14/0403085.jpg",
+      "anoLancamento": "2018"
+    },
+    {
+      "id": "3",
+      "nome": "Homem de Ferro",
+      "poster": "https://media.vneconomy.vn/w800/images/upload/2023/03/02/marvel4.png",
+      "anoLancamento": "2018"
+    },
+    {
+      "id": "4",
+      "nome": "Homem de Ferro",
+      "poster": "https://coastalhousemedia.com/wp-content/uploads/2022/05/KV-Marvel-Avengers-Campus-scaled-1-2048x1442.jpg",
+      "anoLancamento": "2018"
+    },
+    {
+      "id": "5",
+      "nome": "Homem de Ferro",
+      "poster": "https://shopee.co.id/inspirasi-shopee/wp-content/uploads/2022/01/10-Film-Marvel-Terbaik.webp",
+      "anoLancamento": "2018"
+    },
+    {
+      "id": "89a5",
+      "nome": "Homem Aranha 2",
+      "poster": "https://cdn.mercidisco.com.br/image/cache/data/dvd-homem-aranha-2-edicao-especial-800x800.png",
+      "anoLancamento": "2000"
+    },
+    {
+      "id": "3a6a",
+      "nome": "Batman",
+      "poster": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_900/ncom/software/switch/70070000018073/30648e0a24cff549fe97f586431b4b927a8e49f3531108ec50fd00a106733b4d",
+      "anoLancamento": "2022"
+    }
+  ]
+}

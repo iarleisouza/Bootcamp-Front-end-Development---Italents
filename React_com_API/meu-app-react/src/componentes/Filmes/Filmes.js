@@ -6,39 +6,7 @@ import Button from '../Button/Button'
 
 const Filmes = () => {
 
-const [filmes, setFilmes]  = useState([
-{
-    nome: 'Marvels',
-    poster: 'https://shopee.co.id/inspirasi-shopee/wp-content/uploads/2022/01/10-Film-Marvel-Terbaik.webp',
-    anoLancamento: '2020'
-},
-{
-    nome: 'Vingadores',
-    poster: 'https://parade.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTk3MzM3ODU4NTU2NTY4Nzc1/marveldisney.webp',
-    anoLancamento: '2018'
-},
-{
-    nome: 'Homem de Ferro',
-    poster: 'https://de.web.img3.acsta.net/r_654_368/newsv7/19/12/19/16/14/0403085.jpg',
-    anoLancamento: '2018'
-},
-{
-    nome: 'Homem de Ferro',
-    poster: 'https://media.vneconomy.vn/w800/images/upload/2023/03/02/marvel4.png',
-    anoLancamento: '2018'
-},
-{
-    nome: 'Homem de Ferro',
-    poster: 'https://coastalhousemedia.com/wp-content/uploads/2022/05/KV-Marvel-Avengers-Campus-scaled-1-2048x1442.jpg',
-    anoLancamento: '2018'
-},
-{
-    nome: 'Homem de Ferro',
-    poster: 'https://shopee.co.id/inspirasi-shopee/wp-content/uploads/2022/01/10-Film-Marvel-Terbaik.webp',
-    anoLancamento: '2018'
-},
-
-])
+const [filmes, setFilmes]  = useState([])
 
 const [filmesForm, setFilmesForm] = useState({
     nome: "",
@@ -53,14 +21,38 @@ const handleFieldsChange = (event) => {
    })
    console.log(filmesForm)
 }
-const handleClick = () => {
-   setFilmes([...filmes, filmesForm])
+const handleClick = async () => {
+   const response = await fetch('http://localhost:3005/movies', {
+          method: 'POST',
+          headers: new Headers({
+            "content-type": "application/json"
+          }),
+          body: JSON.stringify(filmesForm)
+    })
+  
+      const data = await response.json()
+      alert(`Filme ${data.nome} cadastrado com sucesso!`)
+
    setFilmesForm({
     nome: "",
     poster: "",
     anoLancamento: ""
    })
 }
+
+const getMovies = () => {
+    // GET - buscar as informações dos filmes cadastrados
+    // response - a resposta do servidor (chamada) (carta fechada)
+    // data = É o dado que de fato recebo apos o ok da promessa do responde (conteudo da carta)
+    fetch('http://localhost:3005/movies')
+    .then(response => response.json())
+    .then(data => {
+        setFilmes(data)
+        console.log(data)
+    })
+}
+getMovies()
+
     return (
         <section class='filmes'>
              <h2> Meus Filmes Favoritos</h2>
