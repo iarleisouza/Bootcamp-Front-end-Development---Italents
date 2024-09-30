@@ -1,0 +1,38 @@
+.rifas {
+    display: flex;
+    flex-direction: column;
+  
+    width: 100%;
+}
+
+.rifas-lista {
+    
+   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.rifas-lista .rifa-item {
+   
+   width: 50%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid rgb(80, 98, 98);
+   
+}
+
+.rifas-lista .rifa-item h4 {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+ }
+ 
